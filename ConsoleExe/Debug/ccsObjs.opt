@@ -1,0 +1,1 @@
+"./main.obj" "./console/console.obj" "./lib/mos_std_lib.obj" "../DM3730.cmd" -llibc.a 

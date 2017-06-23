@@ -11,7 +11,7 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./main.obj" \
-"../OMAP3530.cmd" \
+"../DM3730.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
 
@@ -140,7 +140,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 IdleExe.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.2.LTS/bin/armcl" -mv7A8 --code_state=32 -me -O2 --define=omap3530 --symdebug:none --diag_warning=225 --diag_wrap=off --display_error_number -z -m"IdleExe.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.2.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="IdleExe_linkInfo.xml" --ram_model -o "IdleExe.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.2.LTS/bin/armcl" -mv7A8 --code_state=32 -me -O2 --define=dm3730 --symdebug:none --diag_warning=225 --diag_wrap=off --display_error_number -z -m"IdleExe.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.2.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="IdleExe_linkInfo.xml" --ram_model -o "IdleExe.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

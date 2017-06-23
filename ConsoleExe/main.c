@@ -1,7 +1,5 @@
 #include "console/console.h"
 
-int main(void) {
-	
+void main(void) {
     console_run();
-	return 0;
 }

@@ -1,1 +1,1 @@
-"./main.obj" "../OMAP3530.cmd" -llibc.a 
+"./main.obj" "../DM3730.cmd" -llibc.a 

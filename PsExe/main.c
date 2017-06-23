@@ -1,7 +1,7 @@
 #include "ps/ps.h"
+#include "lib/mos_sys_lib.h"
 
-int main(void) {
-	
+void main(void) {
     ps();
-	return 0;
+    exitProc(0);
 }

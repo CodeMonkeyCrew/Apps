@@ -4,13 +4,11 @@
 #include "ps.h"
 
 #define SIZE 500
+
 static char procs[SIZE];
+
 void ps(void)
 {
-
     getProcs(procs, SIZE);
     print(procs);
-
-    exitProc(0);
-
 }
